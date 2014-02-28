@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body ng-app="spikeApp" >
+
+    <section ng-controller ="spikeController">
+        <section>
+            <div>ConnectionID: {{ConnectionId}}</div>
+            <div>Azure role: {{AzureRole}}</div>
+            <div><button ng-click="helloMyself('Hello myself')">Say hello to myself</button></div>
+            <div><button ng-click="helloEveryone('Hello everyone')">Say hello to everyone</button></div>
+
+            <div><button ng-click="helloMyselfContinuously()">Say 10,000 hellos to everyone</button></div>
+            
+        </section>
+        <section>
+            <div>Last message</div>
+            <div>ConnectionID: {{LastMessageFrom}}</div>
+            <div>Message: {{LastMessage}}</div>
+            <div>Incoming count: {{Count}}</div>
+            <div>Outgoing count: {{CountOut}}</div>
+            <div>Sendresult: {{SendResult}}</div>
+            <div>Duration: {{Duration}} ms</div>
+        </section>
+    </section>
+
+    <script src="Scripts/jquery-2.1.0.min.js"></script>
+    <script src="Scripts/jquery.signalR-2.0.2.min.js"></script>
+    <script src="Scripts/angular.min.js"></script>
+    <script src="app/app.js"></script>
+    <script src="app/Controllers.js"></script>
+    <script src="app/Services.js"></script>
+</body>
+</html>

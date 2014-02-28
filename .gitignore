@@ -1,0 +1,10 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/packages
+/CloudSignalRSpikeTest/bin/Release
+/CloudSignalRSpikeTest/obj/Release
+/SignalRSpike/bin
+/SignalRSpike/obj
+/SignalRSpike.v12.suo
